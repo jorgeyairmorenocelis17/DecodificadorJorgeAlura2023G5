@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS/Style.css">
+    
+</head>
+<body>
+    <header class="header">
+        <figure>
+            <img src="./Images/Logo.png" alt="Logo" width="120px" height="48px">
+        </figure>
+    </header>
+    <main class="main">
+        <!-- principal -->
+        <section class="main_section1">
+
+            <textarea placeholder="Ingrese su texto aquí" class="textArea1" id="textarea1"></textarea>
+
+            <article class="section1_article">
+                <img src="./Images/exclamation.png" alt="Signo de exclamacion">
+                <p>Solo lestras minusculas y sin acentos</p>
+            </article>
+
+            <div class="container_section1">
+                <button class="button b1" id="encrypt_button" onclick="handleClick('encrypt')">
+                    Encriptar
+                </button>
+                <button class="button button--secondary" id="decryptButton" onclick="handleClick('decrypt')">
+                    Desencriptar
+                </button>
+            </div>
+        </section>
+        <!-- Lateral -->
+        <section class="main_section2">
+            <div class="container_section2">
+                <article class="alert" id="alert_section2">
+                    <img src="./Images/Muñeco.png" alt="Imagen de referencia">
+                    <p>Ningún mensaje fue encontrado</p>
+                    <span> Ingresa un texto que desees encriptar o desencriptar</span>
+                </article>
+
+                <div class="results nonvisible" id="results_section2">
+                    <textarea class="textArea2" id="textarea2"></textarea>
+                    <button class="button" onclick="copyText()" id="copyButton">
+                        Copiar
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./JavaScript/script.js"></script>
+</body>
+</html>
